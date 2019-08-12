@@ -2,9 +2,9 @@
 
 ## Usage
 ```
-$ docker build .
-$ docker run -d --name nginx-ltsv-log-generator
-$ docker exec -it nginx-ltsv-log-generator tail -f /var/log/nginx/access.log
+$ docker build -t nginx-ltsv-log-generator .
+$ docker run -d --name log-generator nginx-ltsv-log-generator
+$ docker exec -it log-generator tail -f /var/log/nginx/access.log
 ```
 
 ### reference
