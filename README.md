@@ -2,6 +2,11 @@
 
 ## Usage
 ```
+$ git clone https://github.com/litencatt/nginx-ltsv-log-generator
+$ cd /path/to/nginx-ltsv-log-generator
+```
+### use Docker
+```
 $ docker build -t nginx-ltsv-log-generator .
 $ docker run -d --name log-generator nginx-ltsv-log-generator
 $ docker exec -it log-generator tail -f /var/log/nginx/access.log
